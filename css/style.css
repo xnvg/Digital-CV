@@ -39,6 +39,9 @@ ul {
 a {
   text-decoration: none !important;
 }
+.fit-content{
+  height: fit-content;
+}
 /* HEADER */
 header {
   position: relative;
@@ -475,6 +478,7 @@ header p {
   vertical-align: middle;
 }
 /* OTHER */
+
 .hidden{
   display: none;
 }
