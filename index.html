@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/screen.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <!-- BANNER -->
+    <header>
+      <div class="text-banner d-flex flex-column align-items-center pt-5">
+        <h1 class="text-capitalize fw-bold">vương xuân vinh</h1>
+        <p class="text-capitalize">java web developer</p>
+      </div>
+    </header>
+    <!-- NAVBAR -->
+    <div class="div-nav container">
+      <nav class="text-center d-flex justify-content-md-center row">
+        <a href="#" class="col-md-2 p-3"
+          ><i class="icon-user"></i><b>Thông tin</b></a
+        >
+        <a href="#" class="col-md-2 p-3"
+          ><i class="icon-doc-text-inv"></i><b>Lý lịch</b></a
+        >
+        <a href="#" class="col-md-1 d-none d-md-block p-3">
+          <!-- <div class="nav-name">
+            <div class="div-avt">
+              <img src="images/default-avatar.webp" alt="avatar" />
+            </div>
+          </div> -->
+        </a>
+        <a href="#" class="col-md-2 p-3"
+          ><i class="icon-mail-alt"></i><b>Chứng chỉ</b></a
+        >
+        <a href="#" class="col-md-2 p-3"
+          ><i class="icon-star-1"></i><b>Dự án</b></a
+        >
+      </nav>
+    </div>
+    <div class="cv-document">
+      <div class="cv-page container-fluid">
+        <!-- INFO + TARGET -->
+        <div class="info-target d-flex justify-md-center row">
+          <!-- TARGET SECTION -->
+          <div class="section col-md-6 p-5" id="target">
+            <h2 class="section-title">Mục tiêu nghề nghiệp</h2>
+            <div class="section-content job-target pt-3">
+              <p>
+                Là một sinh viên đã hoàn thành trương trình chứng chỉ Doanh
+                Nghiệp của FUNIX. Em mong muốn mình sẽ được làm việc với vị trí
+                Java Web Developer. Ngoài việc có thể vận dụng những gì đã học,
+                em cũng luôn sẵn sàng với những kiến thức mới để ngày càng hoàn
+                thiện và phát triển hơn, trở thành một phần tích cực cho doanh
+                nghiệp.
+              </p>
+            </div>
+          </div>
+          <!-- INFO SECTION -->
+          <div class="section col-md-6 p-5" id="info">
+            <h2 class="section-title">Thông tin cá nhân</h2>
+            <div class="section-content pt-3 hidden" id="private-info">
+              <div class="personal-info d-flex flex-column">
+                <span><b>Ngày sinh: </b>30/12/1998</span>
+                <span><b>Giới tính: </b>Nam</span>
+                <span><b>Điện thoại: </b>0971 661 398</span>
+                <span><b>Email: </b>vgxuanvinh@gmail.com</span>
+                <span><b>Địa chỉ: </b>Thôn 5, Tân Hòa, Quốc Oai, Hà Nội</span>
+                <span><b>Website: </b>https://mycvcvn.com</span>
+              </div>
+              <div class="contact-info">
+                <a href="#"><i class="icon-twitter"></i></a>
+                <a href="https://www.facebook.com/vgxuanvinh"
+                  ><i class="icon-facebook"></i
+                ></a>
+                <a href="#"><i class="icon-gplus"></i></a>
+                <a href="https://www.linkedin.com/in/xnv-z-28a1b9264/"
+                  ><i class="icon-linkedin"></i
+                ></a>
+              </div>
+            </div>
+            <div class="container private-info-form">
+              <form action="" class="d-flex flex-column mt-4">
+                <input
+                  class="p-2 input-email"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter email"
+                  required
+                />
+                <span><em>Hãy nhập email để xác thực</em></span>
+                <input
+                  class="btn btn-submit text-white mt-3"
+                  type="button"
+                  id="submit"
+                  value="Submit"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- MORE-INFO -->
+        <div class="more-info row d-flex justify-content-center">
+          <!-- EXPERIENCE SECTION -->
+          <div
+            class="section col-xl-3 col-lg-4 col-md-5 col-sm-9 m-3"
+            id="experience"
+          >
+            <div class="section-header">
+              <h2 class="section-title">Kinh nghiệm</h2>
+              <i class="ic-toolbox"></i>
+            </div>
+            <div class="show-more more-experience visible-hidden">
+              <div class="arrow-show-more"></div>
+              <button class="btn btn-show-more">Xem thêm</button>
+            </div>
+            <div class="section-content content-show-more pt-3 hidden">
+              <div class="dot">
+                <span class="dot-child"
+                  ><strong>Công ty TNHH Globits</strong></span
+                >
+                <span><em>07/2021 - 11/2021</em></span>
+                <ul>
+                  <li>Full Stack Developer</li>
+                  <li>Xây dựng, phát triển Website theo yêu cầu, thiết kế</li>
+                  <li>
+                    Sử dụng các hệ quản trị CSDL (MySQL, SQL Server) và truy vấn
+                    dữ liệu
+                  </li>
+                  <li>
+                    Sử dụng thư viện ReactJS, AngularJS để xây dựng giao diện và
+                    Web Services (client-side)
+                  </li>
+                  <li>
+                    Sử dụng ngôn ngữ Java để xây dựng các Web Service
+                    (server-side)
+                  </li>
+                  <li>Làm việc với SVN</li>
+                </ul>
+              </div>
+              <div class="dot pt-2">
+                <span class="dot-child"
+                  ><strong>Công ty TNHH Globits</strong></span
+                >
+                <span><em>09/2020 - 12/2020</em></span>
+                <ul>
+                  <li>Thực tập sinh</li>
+                  <li>
+                    Xây dựng và phát triển các module quản lý theo yêu cầu
+                  </li>
+                  <li>
+                    Sử dụng thư viện ReactJS, AngularJS để xây dựng giao diện và
+                    Web Services
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EDUCATION SECTION -->
+          <div
+            class="section col-xl-3 col-lg-4 col-md-5 col-sm-9 m-3"
+            id="education"
+          >
+            <div class="section-header">
+              <h2 class="section-title">Học vấn</h2>
+              <i class="ic-pencil"></i>
+            </div>
+            <div class="show-more more-education visible-hidden">
+              <div class="arrow-show-more"></div>
+              <button class="btn btn-show-more">Xem thêm</button>
+            </div>
+            <div class="section-content content-show-more pt-3 hidden">
+              <div class="dot">
+                <span class="dot-child"><strong>FUNIX</strong></span>
+                <span><em>02/2023 - 08/2023</em></span>
+                <ul>
+                  <li>Tốt nghiệp chứng chỉ doanh nghiệp nhánh Java</li>
+                  <li>GPA:/10</li>
+                </ul>
+              </div>
+              <div class="dot pt-2">
+                <span class="dot-child"
+                  ><strong>Kỹ sư - ĐH Mở Hà Nội</strong></span
+                >
+                <span>09/2016 - 09/2020</span>
+                <ul>
+                  <li>Chuyên ngành: Công nghệ Phần mềm</li>
+                  <li>GPA: 2.69/4</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ACTIVITY SECTION -->
+          <div
+            class="section col-xl-3 col-lg-4 col-md-5 col-sm-9 m-3"
+            id="activity"
+          >
+            <div class="section-header">
+              <h2 class="section-title">Hoạt động</h2>
+              <i class="ic-toolbox"></i>
+            </div>
+            <div class="show-more more-activity visible-hidden">
+              <div class="arrow-show-more"></div>
+              <button class="btn btn-show-more">Xem thêm</button>
+            </div>
+            <div class="section-content content-show-more pt-3 hidden">
+              <div class="dot">
+                <span class="dot-child"
+                  ><strong>Câu lạc bộ giải thuật</strong>
+                </span>
+                <span><em>12/2017 - 12/2018</em></span>
+                <ul>
+                  <li>Thành viên</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- HOBBY SECTION -->
+          <div
+            class="section col-xl-3 col-lg-4 col-md-5 col-sm-9 m-3"
+            id="hobby"
+          >
+            <div class="section-header">
+              <h2 class="section-title">Sở thích</h2>
+              <i class="ic-telescope"></i>
+            </div>
+            <div class="show-more more-hobby visible-hidden">
+              <div class="arrow-show-more"></div>
+              <button class="btn btn-show-more">Xem thêm</button>
+            </div>
+            <div class="section-content content-show-more pt-3 hidden">
+              <ul>
+                <li>
+                  <div class="icon"><i class="fa fa-headphones"></i></div>
+                  <span class="text-nowrap">Âm nhạc</span>
+                </li>
+                <li>
+                  <div class="icon"><i class="fa fa-child"></i></div>
+                  <span class="text-nowrap">Workout</span>
+                </li>
+                <li>
+                  <div class="icon"><i class="fa fa-rocket"></i></div>
+                  <span class="text-nowrap">Chơi game</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- LANGUAGE SECTION -->
+          <div
+            class="section col-xl-3 col-lg-4 col-md-5 col-sm-9 m-3"
+            id="language"
+          >
+            <div class="section-header">
+              <h2 class="section-title">Ngôn ngữ</h2>
+              <i class="ic-telescope"></i>
+            </div>
+            <div class="show-more more-language visible-hidden">
+              <div class="arrow-show-more"></div>
+              <button class="btn btn-show-more">Xem thêm</button>
+            </div>
+            <div class="section-content content-show-more pt-3 hidden">
+              <ul>
+                <li>
+                  <span>Tiếng anh - B2</span>
+                  <div class="skill-point">
+                    <span></span><span></span><span></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- SKILL SECTION -->
+          <div
+            class="section col-xl-3 col-lg-4 col-md-5 col-sm-9 m-3"
+            id="skill"
+          >
+            <div class="section-header">
+              <h2 class="section-title">Kỹ năng</h2>
+              <i class="ic-tools-2"></i>
+            </div>
+            <div class="show-more more-skill visible-hidden">
+              <div class="arrow-show-more"></div>
+              <button class="btn btn-show-more">Xem thêm</button>
+            </div>
+            <div class="section-content content-show-more pt-3 hidden">
+              <ul>
+                <li>
+                  <span>HTML/CSS: Fundamental</span>
+                  <div class="skill-point sp1">
+                    <span></span><span></span><span></span>
+                  </div>
+                </li>
+                <li>
+                  <span>Javascript: Intermediate</span>
+                  <div class="skill-point sp2">
+                    <span></span><span></span><span></span>
+                  </div>
+                </li>
+                <li>
+                  <span>Java: Intermediate</span>
+                  <div class="skill-point sp2 sp-big">
+                    <span></span><span></span><span></span>
+                  </div>
+                </li>
+                <li>
+                  <span>Bootstrap 5: Fundamental</span>
+                  <div class="skill-point sp1 sp-big">
+                    <span></span><span></span><span></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTIFICATE SECTION -->
+        <div class="section p-5" id="certificate">
+          <h2 class="section-title">Chứng chỉ - Giải thưởng</h2>
+          <div class="section-content container-fluid pt-3">
+            <div class="certificate-item-parent row">
+              <div
+                class="certificate-item col-md-6 my-3 text-center text-md-start my-3 d-flex flex-column flex-lg-row align-items-center align-items-md-start"
+              >
+                <img src="images/Cert_WEB.png" alt="certificate-web" />
+                <ul class="mt-3">
+                  <li class="cer-li-1">
+                    <strong>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</strong>
+                  </li>
+                  <li class="mt-2">Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: /10</li>
+                </ul>
+              </div>
+              <div
+                class="certificate-item col-md-6 my-3 text-center text-md-start my-3 d-flex flex-column flex-lg-row align-items-center align-items-md-start"
+              >
+                <img src="images/Cert_PRF.png" alt="certificate-js" />
+                <ul class="mt-3">
+                  <li class="cer-li-1">
+                    <strong>CHỨNG CHỈ LẬP TRÌNH JAVA - FUNIX</strong>
+                  </li>
+                  <li class="mt-2">Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: /10</li>
+                </ul>
+              </div>
+            </div>
+            <div class="certificate-item-parent row">
+              <div
+                class="certificate-item col-md-6 my-3 text-center text-md-start my-3 d-flex flex-column flex-lg-row align-items-center align-items-md-start"
+              >
+                <img src="images/Cert_DBI.png" alt="certificate-db" />
+                <ul class="mt-3">
+                  <li class="cer-li-1">
+                    <strong>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</strong>
+                  </li>
+                  <li class="mt-2">Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: /10</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT SECTION -->
+        <div class="section p-5" id="project">
+          <h2 class="section-title">Dự án</h2>
+          <div class="section-content my-3 d-flex justify-content-md-around">
+            <div class="project-item project-item-1">
+              <div class="project-img">
+                <img src="images/cv.png" alt="project1" />
+              </div>
+              <div class="project-name pt-2">
+                <h3>CV cá nhân</h3>
+              </div>
+              <div class="project-info py-3">
+                <div><span class="py-2 d-block">2023</span></div>
+                <div><i class="icon-user-1"></i><span>FUNIX</span></div>
+                <div><i class="icon-lamp"></i><span>Developer</span></div>
+              </div>
+              <table class="project-description">
+                <tr>
+                  <td>Mô tả</td>
+                  <td>
+                    Trang web cv cá nhân online. Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    <ul>
+                      <li>Phát triển code</li>
+                      <li>Review code</li>
+                      <li>Tối ưu code</li>
+                      <li>Xử lý lỗi</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="project-item project-item-2">
+              <div class="project-img">
+                <img src="images/wl.PNG" alt="project2" />
+              </div>
+              <div class="project-name pt-2">
+                <h3>
+                  Phần mềm quản lý cơ sở động vật hoang giã - Bộ Nông Nghiệp
+                  PTNT
+                </h3>
+              </div>
+              <div class="project-info py-3">
+                <div><span class="d-block py-2">2021</span></div>
+                <div><i class="icon-user-1"></i><span>GLOBITS</span></div>
+                <div><i class="icon-lamp"></i><span>Developer</span></div>
+              </div>
+              <table class="project-description">
+                <tr>
+                  <td>Mô tả</td>
+                  <td>
+                    Ứng dụng quản lý thông tin cơ sở nuôi, phân loại giống loài
+                    động vật hoang dã, quản lý thông tin nhập, xuất động vật
+                    theo từng ngày, quản lý đơn vị hành chính,...Bao gồm chức
+                    năng thêm, sửa, xóa, tìm kiếm, báo cáo, import/export excel.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    <ul>
+                      <li>Phát triển các chức năng</li>
+                      <li>Truy vấn dữ liệu để export</li>
+                      <li>Xử lý lỗi</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>
+                    <ul>
+                      <li>Java Spring Boot</li>
+                      <li>AngularJS</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="project-item project-item-3">
+              <div class="project-img">
+                <img src="images/tb.PNG" alt="project2" />
+              </div>
+              <div class="project-name pt-2">
+                <h3>
+                  Phần mềm quản lý điều trị bênh nhân lao (Chương trình chống
+                  lao quốc gia - WHO tại Việt Nam)
+                </h3>
+              </div>
+              <div class="project-info py-3">
+                <div><span class="d-block py-2">2020</span></div>
+                <div><i class="icon-user-1"></i><span>GLOBITS</span></div>
+                <div><i class="icon-lamp"></i><span>Developer</span></div>
+              </div>
+              <table class="project-description">
+                <tr>
+                  <td>Mô tả</td>
+                  <td>
+                    Ứng dụng giúp quản lý thông tin bệnh nhân Lao qua từng giai
+                    đoạn như: Thông tin cá nhân bệnh nhân, thông tin lần điều
+                    trị, tình trạng bệnh nhân, thông tin phòng bệnh, thiết
+                    bị,...Bao gồm chức năng thêm / sửa / xóa/ tìm kiếm.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    <ul>
+                      <li>Xây dựng, phát triển module</li>
+                      <li>Xử lý lỗi</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>
+                    <ul>
+                      <li>Java Spring Boot v2.1.3</li>
+                      <li>ReactJS</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!-- CONTACT SECTION -->
+      <div class="section" id="contact">
+        <h2 class="section-title"></h2>
+        <div class="section-content">
+          <ul class="d-flex justify-content-center">
+            <li class="p-3">
+              <a href="https://www.facebook.com/vgxuanvinh">
+                <i class="icon-facebook-circled"></i>
+                <span class="contact-name-i">Facebook</span>
+              </a>
+            </li>
+            <li class="p-3">
+              <a href="https://www.linkedin.com/in/xnv-z-28a1b9264/">
+                <i class="icon-linkedin-circled"></i>
+                <span class="contact-name-i">Linkedin</span>
+              </a>
+            </li>
+            <li class="p-3">
+              <a href="https://github.com/xnvg">
+                <i class="icon-github-circled"></i>
+                <span class="contact-name-i">Github</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
