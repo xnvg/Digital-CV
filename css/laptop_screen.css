@@ -1,0 +1,14 @@
+@media (max-width:1250px) {
+  /* TARGET */
+  #target .section-title, #target .job-target {
+    width: 80%;
+  }
+  #contact i{
+    font-size: 30px;
+  }
+  }
+  @media (max-width:1200px){
+    .more-info-section{
+      height: 100%;
+    }
+  }
