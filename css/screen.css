@@ -7,6 +7,11 @@
   font-size: 30px;
 }
 }
+@media (max-width:1200px){
+  .more-info-section{
+    height: 100%;
+  }
+}
 @media (max-width:992px) {
 /* TARGET */
 #target .section-title, #target .job-target {
@@ -67,8 +72,20 @@
 }
 }
 @media (max-width:576px) {
-
+  /* flex child */
+ .project-item {
+  width: 100%;
+  }
 }
 @media (max-width:375px) {
-
+  #project{
+    padding: 0px !important;
+  }
+  .project-info{
+    flex-direction: column;
+  }
+  #contact ul{
+    flex-direction: column;
+    align-items: center;
+  }
 }

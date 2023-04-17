@@ -1,6 +1,7 @@
 const privateInfoEl = document.querySelector("#private-info");
 const privateInfoFormEl = document.querySelector(".private-info-form");
 const inputEmail = document.querySelector(".input-email");
+const txtErrorMessage = document.querySelector(".message");
 
 const btnShowPrivateInfo = document.querySelector("#submit");
 
@@ -18,13 +19,16 @@ btnShowPrivateInfo.addEventListener('click', function(){
   if(regex.test(inputEmail.value)){
     privateInfoEl.classList.toggle('hidden');
     privateInfoFormEl.classList.toggle('hidden');
+    txtErrorMessage.classList.add('hidden');
+  }else{
+    txtErrorMessage.classList.remove('hidden');
   }
 });
 
 // Show message invalid email
-inputEmail.addEventListener('invalid', function(){
-  this.setCustomValidity('Nhập sai định dạng');
-});
+// inputEmail.addEventListener('invalid', function(){
+//   this.setCustomValidity('Nhập sai định dạng');
+// });
 
 // create events for 6 btn view-more
 for(let i=0; i<btnsShowMore.length;i++){

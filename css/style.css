@@ -117,6 +117,9 @@ header p {
 #target .section-title, #target .job-target {
   width: 60%;
 }
+.message{
+  color: red;
+}
 /* EXPERIENCE SECTION */
 #experience {
   /* border: solid 1px #bcbbbc; */
@@ -264,7 +267,7 @@ header p {
 #hobby {
   /* border: solid 1px #bcbbbc; */
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 30px;
 }
 #hobby ul {
   margin-top: 10px;
@@ -324,7 +327,7 @@ header p {
 #language {
   /* border: solid 1px #bcbbbc; */
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 30px;
 }
 #language ul {
   margin-top: 10px;
@@ -349,7 +352,7 @@ header p {
 #skill {
   /* border: solid 1px #bcbbbc; */
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  padding: 30px;
 }
 #skill .section-header {
   display: flex;
@@ -409,6 +412,9 @@ header p {
 /* PROJECT */
 #project .section-content {
   color: #646364;
+}
+#project a{
+  color: #646364 !important;
 }
 .project-item .project-name,
 .project-info {
